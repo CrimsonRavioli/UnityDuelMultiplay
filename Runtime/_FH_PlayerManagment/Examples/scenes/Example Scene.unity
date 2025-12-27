@@ -2321,7 +2321,7 @@ MonoBehaviour:
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PanelSettings: {fileID: 11400000, guid: e5411d017c73d1e48987856c136783b0, type: 2}
+  m_PanelSettings: {fileID: 11400000, guid: e2104adac72ab89428d75fd2b933148b, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: b1e0ef4ae00356e4ab4560bde8a77905, type: 3}
   m_SortingOrder: 0
@@ -2672,6 +2672,10 @@ PrefabInstance:
       propertyPath: m_AllowJoining
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6408585699225960881, guid: ed4825d523dba0e4183b979635b7f950, type: 3}
+      propertyPath: m_JoinAction.m_Reference
+      value: 
+      objectReference: {fileID: -3153359162721115632, guid: 33987113162cbb04c9dfdf3e4b5a1c02, type: 3}
     - target: {fileID: 8674067086326801314, guid: ed4825d523dba0e4183b979635b7f950, type: 3}
       propertyPath: m_Name
       value: LocalPlayerManager
