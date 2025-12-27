@@ -1,0 +1,55 @@
+VisualElement {
+}
+
+.PlayerBox {
+    flex-grow: 1;
+    margin-right: 5px;
+    margin-left: 5px;
+    max-height: 100%;
+    max-width: 30%;
+    width: 25%;
+    min-width: 5%;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-image: url("project://database/Assets/_FH_PlayerManagment/Examples/UI/box.png?fileID=2800000&guid=8632e61e698c0b44d8da7446ba122a53&type=3#box");
+}
+
+.PlayerBox.Empty {
+    background-image: url("project://database/Assets/_FH_PlayerManagment/Examples/UI/box.png?fileID=2800000&guid=8632e61e698c0b44d8da7446ba122a53&type=3#box");
+    -unity-background-image-tint-color: rgb(190, 190, 190);
+    background-color: rgba(94, 94, 94, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.PlayerBox.Occupied {
+    background-image: url("project://database/Assets/_FH_PlayerManagment/Examples/UI/box.png?fileID=2800000&guid=8632e61e698c0b44d8da7446ba122a53&type=3#box");
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+.PlayerNameLabel {
+    -unity-text-align: middle-center;
+}
+
+.timer-bar {
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+}
+
+.timer-bar__fill {
+    height: 100%;
+    background-color: rgb(76, 175, 80);
+    transition: width 0.1s linear;
+}
+
+.player-display {
+    background-image: url("project://database/Assets/_FH_PlayerManagment/Examples/UI/box.png?fileID=2800000&guid=8632e61e698c0b44d8da7446ba122a53&type=3#box");
+}

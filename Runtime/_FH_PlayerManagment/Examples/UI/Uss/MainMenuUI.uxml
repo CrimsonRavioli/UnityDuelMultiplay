@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Game/UI/Uss/LocalPlayer_uss.uss?fileID=7433441132597879392&amp;guid=62524f74de5d5bc4abf342f86b8fbe69&amp;type=3#LocalPlayer_uss" />
+    <Style src="project://database/Assets/_Game/UI/Uss/PlayerJoin.uss?fileID=7433441132597879392&amp;guid=bd421970c2aafec47a434a28ee4cc874&amp;type=3#PlayerJoin" />
+</ui:UXML>

@@ -1,0 +1,24 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_FH_PlayerManagment/Examples/UI/Uss/PlayerJoin.uss?fileID=7433441132597879392&amp;guid=bd421970c2aafec47a434a28ee4cc874&amp;type=3#PlayerJoin" />
+    <Style src="project://database/Assets/_FH_PlayerManagment/Examples/UI/Uss/LocalPlayer_uss.uss?fileID=7433441132597879392&amp;guid=62524f74de5d5bc4abf342f86b8fbe69&amp;type=3#LocalPlayer_uss" />
+    <Style src="project://database/Assets/_FH_PlayerManagment/Examples/UI/Uss/menu%20tabs.uss?fileID=7433441132597879392&amp;guid=6f8d4067155da5142b25b99ca2fb3b4d&amp;type=3#menu tabs" />
+    <ui:VisualElement name="MainMenu" style="flex-grow: 1;">
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:VisualElement name="Offline" style="flex-grow: 0;">
+                <ui:Button text="Local Game" name="LocalGame" emoji-fallback-support="true" />
+                <ui:Button text="Host" name="HostLobby" />
+                <ui:Button text="Join" name="JoinLobby" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Host" style="flex-grow: 0;">
+                <ui:Button text="StartGame" name="StartGame" emoji-fallback-support="true" />
+                <ui:Button text="Lobby" name="ViewLobby" emoji-fallback-support="true" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Joined" style="flex-grow: 0;">
+                <ui:Button text="Ready" name="Ready" />
+                <ui:Button text="Lobby" name="ViewLobby" emoji-fallback-support="true" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <PlayerJoinUI />
+    </ui:VisualElement>
+    <UIPopupScreen />
+</ui:UXML>

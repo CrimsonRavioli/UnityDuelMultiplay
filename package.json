@@ -1,0 +1,23 @@
+{
+  "name": "com.CrimsonRavioli.DualMultiplayer",
+  "version": "1.0.0",
+  "displayName": "DualMultiplayer",
+  "description": "A multiplayer package designed for both local and online play.",
+  "unity": "6000.0",
+  "dependencies": {
+    "com.unity.netcode.gameobjects": "2.7.0",
+    "com.unity.services.multiplayer": "1.1.8",
+    "com.unity.cinemachine": "3.1.5" 
+  },
+ "keywords": [
+    "Multiplayer",
+    "Network",
+    "Player management"
+  ],
+  "author": {
+    "name": "Finn Hayman",
+    "url": "https://github.com/CrimsonRavioli",
+    "email": "finn.hayman@yahoo.com"
+  }
+}
+

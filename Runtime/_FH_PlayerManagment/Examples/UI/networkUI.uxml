@@ -1,0 +1,41 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Game/UI/menu%20tabs.uss?fileID=7433441132597879392&amp;guid=6f8d4067155da5142b25b99ca2fb3b4d&amp;type=3#menu tabs" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
+        <ui:VisualElement name="Tabs" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Shift%20-%20Complete%20Sci-Fi%20UI/Textures/Border/Cut/Cut%20Frame%20Filled%20Big.png?fileID=21300000&amp;guid=ec5758608299d7640a970e6a2d3cc107&amp;type=3#Cut Frame Filled Big&apos;); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; background-color: rgba(255, 255, 255, 0); -unity-background-image-tint-color: rgba(75, 75, 75, 0);">
+            <ui:TabView view-data-key="TabbedMenu" reorderable="false" tabindex="9" name="MenuTabView">
+                <ui:Tab label="Host" name="HostTab" view-data-key="HostTab" style="flex-grow: 1;">
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
+                        <ui:DropdownField choices="Local,Relay,Lobby" focusable="true" enabled="true" index="0" name="HostType" style="-unity-background-image-tint-color: rgb(255, 255, 255);" />
+                        <ui:VisualElement name="HostLocal_Container" enabled="true" style="flex-grow: 1;">
+                            <ui:Button text="Host Local Game" name="LocalGame_HostButton" emoji-fallback-support="true" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="HostLobby_Container" focusable="false" style="flex-grow: 1; display: flex;">
+                            <ui:Button text="Host Lobby" name="LobbyUI_HostButton" emoji-fallback-support="true" />
+                            <ui:SliderInt label="Max Players&#10;" value="4" high-value="15" name="LobbyUI_PlayerCount" low-value="1" show-input-field="true" direction="Horizontal" inverted="false" fill="true" style="font-size: 20px; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); color: rgb(255, 255, 255);" />
+                            <ui:TextField label="Lobby Name" placeholder-text="Name" hide-placeholder-on-focus="false" readonly="false" enabled="true" name="LobbyUI_LobbyName" style="color: rgb(255, 255, 255); -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); font-size: 21px;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="HostRelay_Container" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                </ui:Tab>
+                <ui:Tab label="Join" name="JoinTab" view-data-key="JoinTab" style="flex-grow: 1;">
+                    <ui:DropdownField choices="Local Game,Lobby,Other" focusable="true" enabled="true" index="0" name="JoinType" />
+                    <ui:VisualElement name="JoinLocal_Container" style="flex-grow: 1;">
+                        <ui:Button text="Join Gane" name="LocalGame_JoinButton" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="JoinLobby_Container" style="flex-grow: 1;">
+                        <ui:TreeView />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="JoinRelay_Container" style="flex-grow: 1;" />
+                </ui:Tab>
+                <ui:Tab label="Options" name="OptionsTab" view-data-key="OptionsTab">
+                    <ui:Foldout text="Foldout" enabled="true" focusable="true">
+                        <ui:Slider label="Slider" value="42" high-value="100" />
+                        <ui:RadioButtonGroup label="Radio Button Group" />
+                        <ui:DropdownField label="Dropdown" name="DropdownField" />
+                    </ui:Foldout>
+                </ui:Tab>
+            </ui:TabView>
+        </ui:VisualElement>
+        <ui:VisualElement name="PlayerContainer" style="flex-grow: 1; align-content: auto; justify-content: center; align-items: stretch; align-self: auto; flex-direction: row; height: 10%; max-height: 40%;" />
+    </ui:VisualElement>
+</ui:UXML>
