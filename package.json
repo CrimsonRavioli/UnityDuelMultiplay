@@ -1,7 +1,7 @@
 {
-  "name": "com.CrimsonRavioli.UnityDuelMultiplay",
+  "name": "com.crimsonravioli.unityduelmultiplay",
   "version": "1.0.0",
-  "displayName": "DualMultiplayer",
+  "displayName": "dual_multiplayer",
   "description": "A multiplayer package designed for both local and online play.",
   "unity": "6000.0",
   "dependencies": {
