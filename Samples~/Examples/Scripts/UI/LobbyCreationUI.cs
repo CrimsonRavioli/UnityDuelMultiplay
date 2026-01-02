@@ -75,9 +75,3 @@ public class LobbyCreationUI : PopupScreenData
 
     }
 }
-public class LobbyCreationData
-{
-    public string lobbyName;
-    public int maxPlayers;
-    public bool isPrivate;
-}
